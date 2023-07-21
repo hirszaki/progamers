@@ -1,0 +1,184 @@
+@import './colors';
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	scroll-padding-top: 74px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+	width: 50px;
+	height: 4px;
+	background-color: $main-color;
+	margin: 0 auto 40px;
+}
+nav {
+	text-transform: uppercase;
+	width: 100vw;
+	transition: background-color 0.6s;
+	z-index: 5;
+
+	.navbar-toggler {
+		padding: 10px 15px;
+	}
+
+	.navbar-brand {
+		font-weight: bold;
+	}
+
+	.nav-link,
+	.navbar-nav .show > .nav-link,
+	.navbar-brand,
+	.fa-bars {
+		color: $white;
+	}
+
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .nav-link.show {
+		color: $main-color;
+	}
+}
+
+header.hero-img {
+	position: relative;
+	height: 100vh;
+	background-image: url('../img/playstation-g08d33adf1_640.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	color: $white;
+	z-index: 0;
+
+	h1 {
+		text-transform: uppercase;
+	}
+
+	span {
+		color: $main-color;
+	}
+
+	.hero-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: hsla(0, 0%, 0%, 0.6);
+		z-index: -5;
+	}
+
+	.hero-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 20px;
+		color: $white;
+		font-size: 30px;
+	}
+}
+
+.aboutus {
+	i {
+		font-size: 30px;
+		margin-top: 20px;
+	}
+
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+
+	.aboutus-hover {
+		transition: color 3s;
+	}
+
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
+}
+
+.creategames-hero {
+	position: relative;
+	background-image: url('../img/small.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	color: $white;
+    z-index: 0;
+}
+.creategames-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: hsla(0, 0%, 0%, 0.6);
+    z-index: -5;
+}
+
+.creategames-hero-item {
+    margin: 10px 0;
+
+    i {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+	header {
+		h1 {
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
+	}
+
+    .creategames-img {
+		background-image: url('../img/big.jpg');
+	}
+}
+
+@media (min-width: 1200px) {
+	header.bg-image {
+		background-image: url('../img/playstation-g4e06dd4f8_1920.jpg');
+	}
+}
