@@ -139,6 +139,15 @@ header.hero-img .fa-chevron-down {
   font-size: 36px;
 }
 
+.portfolio .carousel-caption {
+  left: 0;
+  right: 0;
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+.portfolio .carousel-indicators {
+  padding: 20px;
+}
+
 @media (min-width: 768px) {
   header h1 {
     font-size: 40px;
