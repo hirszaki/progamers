@@ -10,6 +10,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #ebecf2;
 }
 
 .shadow-bg {
@@ -146,6 +147,38 @@ header.hero-img .fa-chevron-down {
 }
 .portfolio .carousel-indicators {
   padding: 20px;
+}
+
+.prices .price-box {
+  margin: 20px;
+  padding: 20px 0px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px gray;
+}
+.prices .prices-title {
+  text-transform: uppercase;
+  color: #039dff;
+}
+.prices .price-box p {
+  font-weight: bold;
+}
+.prices span {
+  font-weight: 400;
+}
+.prices .prices-tag {
+  font-size: 30px;
+}
+.prices span.big-word {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+.prices a:link {
+  color: #039dff;
+  text-decoration: underline;
+}
+.prices .btn:hover {
+  background-color: #039dff;
 }
 
 @media (min-width: 768px) {

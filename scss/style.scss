@@ -12,6 +12,7 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	background-color: $bg-color;
 }
 
 .shadow-bg {
@@ -163,6 +164,46 @@ header.hero-img {
 	}
 	.carousel-indicators {
 		padding: 20px;
+	}
+}
+
+.prices {
+	.price-box {
+		margin: 20px;
+		padding: 20px 0px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px gray;
+	}
+
+	.prices-title {
+		text-transform: uppercase;
+		color: $main-color;
+	}
+
+	.price-box p {
+		font-weight: bold;
+	}
+
+	span {
+		font-weight: 400;
+	}
+
+	.prices-tag {
+		font-size: 30px;
+	}
+
+	span.big-word {
+		text-transform: uppercase;
+		color: black;
+		font-weight: bold;
+	}
+	a:link {
+		color: $main-color;
+		text-decoration: underline;
+	}
+
+	.btn:hover {
+		background-color: $main-color;
 	}
 }
 
