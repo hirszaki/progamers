@@ -1,4 +1,5 @@
-@import './colors';
+@use './colors';
+@use './animations';
 
 * {
 	box-sizing: border-box;
@@ -289,8 +290,40 @@ header.hero-img {
 	}
 }
 
-.contact {
+.contact-hero {
+	position: relative;
+	background-image: url('../img/skyline-gb5ba49cd2_1280.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	color: $white;
+	z-index: 0;
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: hsla(0, 0%, 0%, 0.6);
+		z-index: -5;
+	}
+
+	.underline {
+		background-color: $white;
+	}
+
+	.header-text {
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		letter-spacing: 2px;
+	}
+
 	i {
+		padding: 10px;
+	}
+
+	i:hover {
 		color: $main-color;
 	}
 }
